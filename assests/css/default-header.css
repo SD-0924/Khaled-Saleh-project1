@@ -1,8 +1,6 @@
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
-    
-    /*border-bottom: 1px solid black;*/
     box-shadow: -3px 0px 5px 0px black;
 }
 
@@ -15,24 +13,50 @@ ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
     font-size: medium;
 }
 
+@media screen and (max-width:620px) {
+    .header button span{
+        display: none;
+    }
+}
+
 
 #triangle-container{
     position: relative;
 }
 
-#triangle-left{
+#triangle-left, #triangle-right{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 75px;
+}
+
+
+@media screen and (max-width:1200px) {
+    #triangle-left, #triangle-right{
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    #triangle-left, #triangle-right{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    #triangle-left, #triangle-right{
+        height: 40px;
+    }
+}
+
+
+#triangle-left{
     background: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
-    clip-path: polygon(0 0, 90% 0, 0 85%, 0% 100%);
+    clip-path: polygon(0 0, 90% 0, 0 100%, 0% 100%);
     z-index: -1;
 }
 
 #triangle-right{
-    position: absolute;
-    width: 100vw;
-    height: 75px;
     background-color: var(--brand-secondary);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 0%);
     z-index: -2;
@@ -40,8 +64,8 @@ ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
 
 #h-welcome{
     margin-top: 50px;
-    margin-right: 100px;
     margin-bottom: 25px;
+    margin-left: 20px;
 }
 #h-welcome h2{
     color: #0dbf85;

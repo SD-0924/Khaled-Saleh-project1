@@ -13,6 +13,7 @@ body{
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 4px 0px var(--lines-color);
+    flex-wrap: wrap;
 }
 
 
@@ -29,10 +30,10 @@ ion-icon[name="search-outline"]{
 }
 
 .filter-item{
-    min-width: 14%;
     border-left: 1px solid #dcdcdc;
     padding: 5px 10px;
 }
+
 
 .filter-item label{
     font-size: 0.7rem;
@@ -41,9 +42,33 @@ ion-icon[name="search-outline"]{
 
 .filter-item select{
     font-weight: 500;
+    min-width: 0px;
 }
 
 
 .filter-item select:focus-visible{
     outline: none;
+}
+
+
+#search-bar{
+    width: 70%;
+}
+
+@media screen and (max-width:860px) {
+    #search-bar{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width:620px) {
+    #search-bar{
+        width: 100%;
+        padding: 10px 5px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .filter-item:first-child{
+        border: none;
+    }
 }
