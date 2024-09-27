@@ -1,0 +1,10 @@
+ion-icon#full-heart{
+    color: #dc143b;
+    font-size: 1.3rem;
+}
+
+footer{
+    font-weight: 400;
+    background-color: var(--bg_body);
+    padding: 30px 0;
+}

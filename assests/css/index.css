@@ -1,0 +1,45 @@
+
+main{
+    background-color: var(--bg_body);
+}
+
+body{
+    min-height: 100vh;
+}
+
+#search-form{
+    margin-top: 20px;
+    border: 1px solid var(--lines-color);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px var(--lines-color);
+}
+
+
+ion-icon[name="search-outline"]{
+    padding: 0 5px;
+}
+#search-form input{
+    height: 100%;
+    width: 100%;
+}
+
+.filter-item{
+    min-width: 14%;
+    border-left: 1px solid #dcdcdc;
+    padding: 5px 10px;
+}
+
+.filter-item label{
+    font-size: 0.7rem;
+    padding-left: 5px;
+}
+
+.filter-item select{
+    font-weight: 500;
+}
+
+
+.filter-item select:focus-visible{
+    outline: none;
+}

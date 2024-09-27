@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Topics - Tutorials & Guides</title>
+    <link rel="stylesheet" href="./assests/css/index.css">
+    <link rel="stylesheet" href="./assests/css/default-header.css">
+    <link rel="stylesheet" href="./assests/css/variables.css">
+    <link rel="stylesheet" href="./assests/css/general.css">
+    <link rel="stylesheet" href="./assests/css/default-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body class="flex d-column">
+    <header>
+        <div class="header flex j-between p-edge a-center">
+            <a class="brand" href="./index.html">Web Topics</a>
+            <div class="flex gap-1">
+                <button class="button-default flex a-center gap-1"><ion-icon name="moon-outline"></ion-icon>Dark Mode</button>
+                <button class="button-default flex a-center gap-1"><ion-icon name="heart-outline"></ion-icon>Favourites</button>
+            </div>
+        </div>
+        <div id="triangle-container">
+            <div id="triangle-left"></div>
+            <div id="triangle-right"></div>
+            <div class="flex d-column a-center">
+                <div id="h-welcome" class="text-start">
+                    <h2>Welcome to our website!</h2>
+                    <p>We have a new design that's fresh, modern, and easy to use.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="grow">
+        <div class="p-edge">
+            <form id="search-form" class="flex">
+                <div class="flex a-center gap-1 grow">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input class="" placeholder="Search the website..." type="text">
+                </div>
+                <div class="flex d-column filter-item">
+                    <label for="sort">Sort by:</label>
+                    <select name="sort" id="sort-list">
+                        <option value="default">Default</option>
+                        <option value="ascending">Ascending</option>
+                        <option value="descending">Descending</option>
+                    </select>
+                </div>
+                <div class="flex d-column filter-item">
+                    <label for="fitler">Filter by:</label>
+                    <select name="fitler" id="filter-list">
+                        <option value="default">Default</option>
+                        <option value="title">Title</option>
+                        <option value="type">Type</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="flex j-center a-center gap-1">
+        Developed with <ion-icon id="full-heart" name="heart"></ion-icon> © 2024
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
