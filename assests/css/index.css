@@ -17,11 +17,15 @@ body{
 
 
 ion-icon[name="search-outline"]{
-    padding: 0 5px;
+    padding: 0 10px;
 }
 #search-form input{
     height: 100%;
     width: 100%;
+}
+
+#search-result{
+    margin-top: 15px;
 }
 
 .filter-item{
