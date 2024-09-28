@@ -158,10 +158,14 @@ a{
     cursor: pointer;
 }
 
-.card-image img {
-    width: 100%;
+.card-image{
     height: 150px;
+}
+
+.card-image img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .card-content {
