@@ -4,7 +4,11 @@
     box-shadow: -3px 0px 5px 0px black;
 }
 
-.brand{
+#brand{
+    font-size: 1.3rem;
+}
+
+#brand a{
     color: var(--brand-primary);
     font-weight: 400;
 }
@@ -65,7 +69,7 @@ ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
 #h-welcome{
     margin-top: 50px;
     margin-bottom: 25px;
-    margin-left: 20px;
+    margin-left: var(--w-edge);
 }
 #h-welcome h2{
     color: #0dbf85;
