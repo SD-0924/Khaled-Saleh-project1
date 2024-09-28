@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,25 @@
     <link rel="stylesheet" href="./assests/css/default-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="flex d-column">
     <header>
         <div class="header flex j-between p-edge a-center">
             <h1 id="brand"><a href="./index.html">Web Topics</a></h1>
             <div class="flex gap-1">
-                <button class="button-default flex a-center gap-1"><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span></button>
-                <button class="button-default flex a-center gap-1"><ion-icon name="heart-outline"></ion-icon><span>Favourites</span></button>
+                <button class="button-default flex a-center gap-1"><ion-icon name="moon-outline"></ion-icon><span>Dark
+                        Mode</span></button>
+                <button class="button-default flex a-center gap-1"><ion-icon
+                        name="heart-outline"></ion-icon><span>Favourites</span></button>
             </div>
         </div>
-        <div id="triangle-container">
-            <div id="triangle-left"></div>
-            <div id="triangle-right"></div>
+        <div id="triangle-container" class="position-relative">
+            <div id="triangle-left" class="position-absolute w-100"></div>
+            <div id="triangle-right" class="position-absolute w-100"></div>
             <div class="flex d-column a-center">
                 <div id="h-welcome" class="text-start">
                     <h2>Welcome to our website!</h2>
@@ -33,77 +39,76 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="p-edge">
-            <form id="search-form" class="flex">
-                <div id="search-bar" class="flex a-center gap-1">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <input name="q" placeholder="Search the website..." type="text">
-                </div>
-                <div id="list-filters" class="flex d-row grow">
-                    <div class="flex d-column filter-item grow basis">
-                        <label for="sort">Sort by:</label>
-                        <select name="sort" id="sort-list">
-                            <option value="default">Default</option>
-                            <option value="ascending">Ascending</option>
-                            <option value="descending">Descending</option>
-                        </select>
-                    </div>
-                    <div class="flex d-column filter-item grow basis">
-                        <label for="fitler">Filter by:</label>
-                        <select name="fitler" id="filter-list">
-                            <option value="default">Default</option>
-                            <option value="title">Title</option>
-                            <option value="type">Type</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-            <h2 id="search-result" >"<span id="result">24</span>" Web Topics Found</h2>
-            <div class="cards-container">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./assests/html.png" alt="HTML Icon">
-                    </div>
-                    <div class="card-content">
-                        <h2>Web Development Languages</h2>
-                        <h3>HTML</h3>
-                        <div class="rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </div>
-                        <p class="author">Author: Sarah Smith</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="./assests/css.webp" alt="CSS Icon">
-                    </div>
-                    <div class="card-content">
-                        <h2>Web Development Languages</h2>
-                        <h3>CSS</h3>
-                        <div class="rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                        </div>
-                        <p class="author">Author: David Lee</p>
-                    </div>
-                </div>
-                <!---->
-
+    <main class="p-edge">
+        <form id="search-form" class="flex flex-wrap">
+            <div id="search-bar" class="flex a-center gap-1 w-70">
+                <ion-icon name="search-outline"></ion-icon>
+                <input class="w-100 h-100" name="q" placeholder="Search the website..." type="text">
             </div>
+            <div id="list-filters" class="flex d-row grow">
+                <div class="flex d-column filter-item grow basis">
+                    <label for="sort">Sort by:</label>
+                    <select name="sort" id="sort-list">
+                        <option value="default">Default</option>
+                        <option value="ascending">Ascending</option>
+                        <option value="descending">Descending</option>
+                    </select>
+                </div>
+                <div class="flex d-column filter-item grow basis">
+                    <label for="fitler">Filter by:</label>
+                    <select name="fitler" id="filter-list">
+                        <option value="default">Default</option>
+                        <option value="title">Title</option>
+                        <option value="type">Type</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <h2 id="search-result">"<span id="result">24</span>" Web Topics Found</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./assests/html.png" alt="HTML Icon">
+                </div>
+                <div class="card-content">
+                    <h2>Web Development Languages</h2>
+                    <h3>HTML</h3>
+                    <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p class="author">Author: Sarah Smith</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="./assests/css.webp" alt="CSS Icon">
+                </div>
+                <div class="card-content">
+                    <h2>Web Development Languages</h2>
+                    <h3>CSS</h3>
+                    <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p class="author">Author: David Lee</p>
+                </div>
+            </div>
+            <!---->
         </div>
     </main>
     <footer>
-        <p class="flex j-center a-center gap-1">Developed with <ion-icon id="full-heart" name="heart"></ion-icon> © 2024</p>
+        <p class="flex j-center a-center gap-1">Developed with <ion-icon id="full-heart" name="heart"></ion-icon> © 2024
+        </p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

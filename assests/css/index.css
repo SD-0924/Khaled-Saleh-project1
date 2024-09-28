@@ -10,27 +10,25 @@ body{
 #search-form{
     margin-top: 20px;
     border: 1px solid var(--lines-color);
-    background-color: white;
+    background-color: var(--bg_default);
     border-radius: 8px;
     box-shadow: 0px 0px 4px 0px var(--lines-color);
-    flex-wrap: wrap;
 }
+
 
 
 ion-icon[name="search-outline"]{
     padding: 0 10px;
 }
-#search-form input{
-    height: 100%;
-    width: 100%;
-}
+
 
 #search-result{
     margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .filter-item{
-    border-left: 1px solid #dcdcdc;
+    border-left: 1px solid var(--lines-color);
     padding: 5px 10px;
 }
 
@@ -42,18 +40,8 @@ ion-icon[name="search-outline"]{
 
 .filter-item select{
     font-weight: 500;
-    min-width: 0px;
 }
 
-
-.filter-item select:focus-visible{
-    outline: none;
-}
-
-
-#search-bar{
-    width: 70%;
-}
 
 @media screen and (max-width:860px) {
     #search-bar{
@@ -66,9 +54,10 @@ ion-icon[name="search-outline"]{
     #search-bar{
         width: 100%;
         padding: 10px 5px;
-        border-bottom: 1px solid #dcdcdc;
+        border-bottom: 1px solid var(--lines-color);
     }
     .filter-item:first-child{
         border: none;
     }
 }
+

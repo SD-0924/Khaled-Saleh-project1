@@ -15,10 +15,28 @@ input:focus-visible{
     outline: none;
 }
 
+select:focus-visible{
+    outline: none;
+}
+
 a{
     text-decoration: none;
 }
 
+
+/* Utility */
+
+.h-100{
+    height: 100%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-70{
+    width: 70%;
+}
 
 .p-edge{
     padding-left: var(--w-edge);
@@ -29,6 +47,11 @@ a{
     display: flex;
 }
 
+
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .j-center{
     justify-content: center;
 }
@@ -64,6 +87,7 @@ a{
     gap: 10px;
 }
 
+/* Button style */
 .button-default{
     background-color: var(--bg_default);
     border: 1px solid var(--lines-color);
@@ -74,7 +98,17 @@ a{
 }
 
 .button-default:hover{
-    background-color: #f0f0f0;
+    background-color: var(--button-hover);
+}
+/*****/
+
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
 }
 
 .grow{
@@ -85,8 +119,32 @@ a{
     flex-basis: 0;
 }
 
+/* Card style */
+
+.cards-container{
+    margin-bottom: 5px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+
+
+@media (max-width: 768px) {
+    .cards-container{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
 .card{
-    background-color: white;
+    background-color: var(--bg_default);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -130,34 +188,13 @@ a{
 }
 .card-content .rating ion-icon[name="star"], .card-content .rating ion-icon[name="star-outline"]  {
     font-size: 1.08rem;
-    color: #e19619;
+    color: var(--rate-color);
     margin-right: -4px;
 }
 
 .card-content .author {
     margin-top: 10px;
     font-size: 14px;
-    color: #838383
+    color: var(--body-text-thin);
 }
-
-.cards-container{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-}
-
-
-
-@media (max-width: 768px) {
-    .cards-container{
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .cards-container {
-        grid-template-columns: 1fr; 
-    }
-}
+/***End of card util***/
