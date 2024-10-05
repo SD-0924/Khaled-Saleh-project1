@@ -2,16 +2,20 @@
     padding-top: 24px;
     padding-bottom: 24px;
     box-shadow: -3px 0px 5px 0px var(--line-black);
+    background-color: var(--bg_default);
 }
 
 #brand{
     font-size: 1.3rem;
 }
 
+
 #brand a{
     color: var(--brand-primary);
     font-weight: 400;
 }
+
+
 
 ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
     font-size: medium;
@@ -23,18 +27,20 @@ ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
     height: 75px;
 }
 
-
+#triangle-container{
+    background-color: var(--bg_default);
+}
 
 #triangle-left{
     background: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
     clip-path: polygon(0 0, 90% 0, 0 100%, 0% 100%);
-    z-index: -1;
+    z-index: 1;
 }
 
 #triangle-right{
     background-color: var(--brand-secondary);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 0%);
-    z-index: -2;
+    z-index: 2;
 }
 
 #h-welcome{
@@ -49,7 +55,7 @@ ion-icon[name="moon-outline"],ion-icon[name="heart-outline"]{
 
 #h-welcome p{
     font-size: 1.1rem;
-    color: var(--body-text-thin);
+    color: var(--body-text);
     line-height: 14px;
 }
 

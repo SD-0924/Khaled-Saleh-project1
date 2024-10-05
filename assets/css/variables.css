@@ -5,12 +5,16 @@
     --bg_body: #F0F9FF;
     --lines-color: #DDDDDD;
     --body-text: #333333;
+    --details-background:#333333;
+    --details-color: white;
     --heart-color: #DC143C;
     --body-text-thin: #4d4d4d;
     --button-hover:#f0f0f0;
     --line-black: black;
     --rate-color: #e19619;
+    --author-name: #7c7c7c;
     --w-edge: 76px;
+    --w-details-edge: 220px
 }
 
 @media screen and (max-width:620px) {
