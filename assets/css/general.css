@@ -180,6 +180,7 @@ a{
 
 .cards-container-small .card{
     min-width: 180px;
+    max-width: 180px;
 }
 
 
@@ -254,7 +255,7 @@ a{
 .card-content .rating ion-icon[name="star"], .card-content .rating ion-icon[name="star-outline"]  {
     font-size: 1.08rem;
     color: var(--rate-color);
-    margin-right: -4px;
+    margin-right: 0px;
 }
 
 .card-content .author {
