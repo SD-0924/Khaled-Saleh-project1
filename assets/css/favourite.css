@@ -1,0 +1,16 @@
+#favourite-bar{
+    position: fixed;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bg_default);
+    z-index: 10;
+}
+
+#favourite-bar.hide{
+    display: none;
+}
+
+.fav-head{
+    margin-bottom: 20px;
+}
