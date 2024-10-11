@@ -1,6 +1,21 @@
 (async () => {
-    const response = await fetch("http://localhost:3000/topics");
+    const url = new URL(location.href);
+    const searchParams = new URLSearchParams();
+    let sort = url.searchParams.get("sort");
+    let filter = url.searchParams.get("filter");
+    let query = url.searchParams.get("q");
+    if(sort){
+        searchParams.append("_sort",sort);
+        document.getElementById("sort-list").value = sort;
+    }
+    if(filter){
+        document.getElementById("filter-list").value = filter;
+    }
+    if(filter && query) searchParams.append(filter,query)
+    document.getElementById("search-query").value = query;
+    const response = await fetch(`https://khaled-saleh-project1.onrender.com/topics?${searchParams.toString()}`);
     const topics = await response.json();
+    document.getElementById("result").textContent = topics.length;
     const container = document.getElementById("main-cards-container");
     topics.forEach(topic => {
         let rating = "";

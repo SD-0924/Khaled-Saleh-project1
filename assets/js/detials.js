@@ -1,7 +1,7 @@
 (async()=>{
     let url = new URL(location.href);
     const id = url.searchParams.get("id");
-    const response = await fetch(`http://localhost:3000/topics/${id}`);
+    const response = await fetch(`https://khaled-saleh-project1.onrender.com/topics/${id}`);
     const topic = await response.json();
     let rating = "";
     let rating_counter = topic.rating;

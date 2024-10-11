@@ -45,28 +45,30 @@
             <form id="search-form" class="flex flex-wrap">
                 <div id="search-bar" class="flex a-center gap-1 w-70">
                     <ion-icon name="search-outline"></ion-icon>
-                    <input class="w-100 h-100" name="q" placeholder="Search the website..." type="text">
+                    <input id="search-query" class="w-100 h-100" name="q" placeholder="Search the website..." type="text">
                 </div>
                 <div id="list-filters" class="flex d-row grow">
                     <div class="flex d-column filter-item grow basis">
                         <label for="sort">Sort by:</label>
-                        <select name="sort" id="sort-list">
-                            <option value="default">Default</option>
-                            <option value="ascending">Ascending</option>
-                            <option value="descending">Descending</option>
+                        <select  name="sort" id="sort-list">
+                            <option selected="selected" value="id">Id</option>
+                            <option value="name">Name</option>
+                            <option value="topic">Topic</option>
+                            <option value="category">Category</option>
                         </select>
                     </div>
                     <div class="flex d-column filter-item grow basis">
-                        <label for="fitler">Filter by:</label>
-                        <select name="fitler" id="filter-list">
-                            <option value="default">Default</option>
-                            <option value="title">Title</option>
-                            <option value="type">Type</option>
+                        <label for="filter">Filter by:</label>
+                        <select name="filter" id="filter-list">
+                            <option value="id">Id</option>
+                            <option value="name">Name</option>
+                            <option value="topic">Topic</option>
+                            <option selected="selected" value="category">Category</option>
                         </select>
                     </div>
                 </div>
             </form>
-            <h2 id="search-result">"<span id="result">24</span>" Web Topics Found</h2>
+            <h2 id="search-result">"<span id="result">loading...</span>" Web Topics Found</h2>
             <div id="main-cards-container" class="cards-container">
                 <!---->
             </div>
