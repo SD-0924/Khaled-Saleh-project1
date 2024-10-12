@@ -90,4 +90,6 @@ const addToFavourite = (topic) => {
     })
 }
 
-loadFavourite("..");
+const loadFav = () => {
+    loadFavourite("..");
+}

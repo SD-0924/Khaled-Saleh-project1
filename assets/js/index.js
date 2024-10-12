@@ -49,4 +49,7 @@
     });
 })();
 
-loadFavourite(".");
+const loadFav = () => {
+    loadFavourite(".");
+}
+

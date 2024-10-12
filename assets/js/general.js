@@ -6,6 +6,7 @@ darkModeButton.addEventListener("click",function (event){
 const favouriteButton = document.getElementById("favourite-button");
 
 favouriteButton.addEventListener("click",function (event){
+    loadFav();
     document.getElementById("favourite-bar").classList.toggle("hide");
 });
 
@@ -40,6 +41,6 @@ const loadFavourite = (path)=>{
             `
         })
         let container = document.getElementById("favourite-container");
-        container.innerHTML += content;
+        container.innerHTML = content;
     }
 }
